@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0a0a1a" />
+  
+  <!-- Earth Cross Section -->
+  <circle cx="400" cy="300" r="200" fill="#0f2d69" stroke="#4a6cff" stroke-width="2" />
+  
+  <!-- Inner Core -->
+  <circle cx="400" cy="300" r="50" fill="#ff5e5e" stroke="#ffffff" stroke-width="1" />
+  <text x="400" y="300" fill="#ffffff" font-family="Arial" font-size="14" text-anchor="middle">Inner Core</text>
+  <text x="400" y="320" fill="#ffffff" font-family="Arial" font-size="12" text-anchor="middle">(Solid Iron)</text>
+  
+  <!-- Outer Core -->
+  <circle cx="400" cy="300" r="100" fill="none" stroke="#ff9d5e" stroke-width="2" />
+  <circle cx="400" cy="300" r="100" fill="#7a4dff" fill-opacity="0.3" />
+  
+  <!-- Outer Core Flow Patterns -->
+  <g id="flow-patterns">
+    <!-- Circular Flow Patterns -->
+    <path d="M350,250 Q370,230 400,230 Q430,230 450,250 Q470,270 470,300 Q470,330 450,350 Q430,370 400,370 Q370,370 350,350 Q330,330 330,300 Q330,270 350,250" fill="none" stroke="#ff9d5e" stroke-width="2" stroke-dasharray="5,3" />
+    
+    <!-- Flow Arrows -->
+    <path d="M450,250 L460,240 L450,235" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M470,300 L480,300 L475,290" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M450,350 L460,360 L465,350" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M400,370 L400,380 L410,375" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M350,350 L340,360 L335,350" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M330,300 L320,300 L325,310" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M350,250 L340,240 L335,250" fill="none" stroke="#ff9d5e" stroke-width="2" />
+    <path d="M400,230 L400,220 L390,225" fill="none" stroke="#ff9d5e" stroke-width="2" />
+  </g>
+  
+  <!-- Rotate the flow patterns for animation effect -->
+  <animateTransform 
+    xlink:href="#flow-patterns"
+    attributeName="transform"
+    type="rotate"
+    from="0 400 300"
+    to="360 400 300"
+    dur="20s"
+    repeatCount="indefinite" />
+  
+  <!-- Mantle -->
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#26c6ff" stroke-width="2" />
+  
+  <!-- Crust -->
+  <circle cx="400" cy="300" r="200" fill="none" stroke="#26ff8c" stroke-width="3" />
+  
+  <!-- Magnetic Field Lines -->
+  <path d="M400,100 Q300,150 250,300 Q300,450 400,500 Q500,450 550,300 Q500,150 400,100" fill="none" stroke="#4a6cff" stroke-width="3" stroke-opacity="0.7" />
+  <path d="M400,100 Q250,200 200,300 Q250,400 400,500 Q550,400 600,300 Q550,200 400,100" fill="none" stroke="#4a6cff" stroke-width="3" stroke-opacity="0.5" />
+  <path d="M400,100 Q200,200 150,300 Q200,400 400,500 Q600,400 650,300 Q600,200 400,100" fill="none" stroke="#4a6cff" stroke-width="3" stroke-opacity="0.3" />
+  
+  <!-- Magnetic Field Arrows -->
+  <path d="M400,100 L410,90 L390,90" fill="none" stroke="#4a6cff" stroke-width="2" />
+  <path d="M400,500 L410,510 L390,510" fill="none" stroke="#4a6cff" stroke-width="2" />
+  
+  <!-- Labels -->
+  <text x="400" y="75" fill="#4a6cff" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Magnetic Field</text>
+  
+  <text x="400" y="180" fill="#26ff8c" font-family="Arial" font-size="14" text-anchor="middle">Crust</text>
+  <text x="400" y="220" fill="#26c6ff" font-family="Arial" font-size="14" text-anchor="middle">Mantle</text>
+  <text x="400" y="270" fill="#ff9d5e" font-family="Arial" font-size="14" text-anchor="middle">Outer Core</text>
+  <text x="400" y="285" fill="#ff9d5e" font-family="Arial" font-size="12" text-anchor="middle">(Liquid Iron)</text>
+  
+  <!-- Electric Current Indicators -->
+  <circle cx="380" cy="330" r="5" fill="#ffff00" />
+  <circle cx="420" cy="270" r="5" fill="#ffff00" />
+  <text x="390" y="330" fill="#ffff00" font-family="Arial" font-size="12" text-anchor="start">Electric Current</text>
+  
+  <!-- Earth Rotation Indicator -->
+  <path d="M550,300 A150,150 0 0,0 400,150" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,3" />
+  <path d="M550,300 L560,310 L565,295" fill="none" stroke="#ffffff" stroke-width="1" />
+  <text x="580" y="300" fill="#ffffff" font-family="Arial" font-size="14" text-anchor="start">Earth's Rotation</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" fill="#e0e0ff" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">The Geodynamo Process</text>
+  
+  <!-- Description -->
+  <text x="400" y="530" fill="#e0e0ff" font-family="Arial" font-size="14" text-anchor="middle">Earth's rotation + convection in the liquid outer core creates electric currents</text>
+  <text x="400" y="550" fill="#e0e0ff" font-family="Arial" font-size="14" text-anchor="middle">These electric currents generate Earth's magnetic field</text>
+</svg>

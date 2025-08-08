@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0a0a1a" />
+  
+  <!-- Stars -->
+  <g id="stars">
+    <circle cx="50" cy="50" r="1" fill="#ffffff" />
+    <circle cx="120" cy="80" r="1.5" fill="#ffffff" />
+    <circle cx="200" cy="40" r="1" fill="#ffffff" />
+    <circle cx="280" cy="90" r="1.2" fill="#ffffff" />
+    <circle cx="350" cy="30" r="1" fill="#ffffff" />
+    <circle cx="420" cy="70" r="1.5" fill="#ffffff" />
+    <circle cx="500" cy="50" r="1" fill="#ffffff" />
+    <circle cx="580" cy="80" r="1.2" fill="#ffffff" />
+    <circle cx="650" cy="40" r="1" fill="#ffffff" />
+    <circle cx="720" cy="60" r="1.5" fill="#ffffff" />
+    <circle cx="780" cy="30" r="1" fill="#ffffff" />
+    
+    <circle cx="30" cy="150" r="1.2" fill="#ffffff" />
+    <circle cx="100" cy="180" r="1" fill="#ffffff" />
+    <circle cx="170" cy="140" r="1.5" fill="#ffffff" />
+    <circle cx="250" cy="190" r="1" fill="#ffffff" />
+    <circle cx="320" cy="130" r="1.2" fill="#ffffff" />
+    <circle cx="390" cy="170" r="1" fill="#ffffff" />
+    <circle cx="460" cy="150" r="1.5" fill="#ffffff" />
+    <circle cx="540" cy="180" r="1" fill="#ffffff" />
+    <circle cx="610" cy="140" r="1.2" fill="#ffffff" />
+    <circle cx="680" cy="160" r="1" fill="#ffffff" />
+    <circle cx="750" cy="130" r="1.5" fill="#ffffff" />
+    
+    <!-- More stars throughout the sky -->
+    <circle cx="50" cy="250" r="1" fill="#ffffff" />
+    <circle cx="150" cy="220" r="1.5" fill="#ffffff" />
+    <circle cx="250" cy="270" r="1" fill="#ffffff" />
+    <circle cx="350" cy="230" r="1.2" fill="#ffffff" />
+    <circle cx="450" cy="260" r="1" fill="#ffffff" />
+    <circle cx="550" cy="240" r="1.5" fill="#ffffff" />
+    <circle cx="650" cy="270" r="1" fill="#ffffff" />
+    <circle cx="750" cy="220" r="1.2" fill="#ffffff" />
+  </g>
+  
+  <!-- Sun (off-screen source of solar wind) -->
+  <circle cx="-50" cy="100" r="40" fill="#ffdd00" />
+  
+  <!-- Solar Wind Particles -->
+  <g id="solar-wind">
+    <circle cx="50" cy="100" r="2" fill="#ffdd00" opacity="0.7" />
+    <circle cx="80" cy="90" r="2" fill="#ffdd00" opacity="0.7" />
+    <circle cx="110" cy="110" r="2" fill="#ffdd00" opacity="0.7" />
+    <circle cx="140" cy="95" r="2" fill="#ffdd00" opacity="0.7" />
+    <circle cx="170" cy="105" r="2" fill="#ffdd00" opacity="0.7" />
+    <circle cx="200" cy="100" r="2" fill="#ffdd00" opacity="0.7" />
+  </g>
+  
+  <!-- Animate Solar Wind -->
+  <animateTransform 
+    xlink:href="#solar-wind"
+    attributeName="transform"
+    type="translate"
+    from="0 0"
+    to="600 0"
+    dur="5s"
+    repeatCount="indefinite" />
+  
+  <!-- Earth -->
+  <circle cx="400" cy="300" r="120" fill="#1a3a8f" />
+  <circle cx="400" cy="300" r="110" fill="#26c6ff" />
+  
+  <!-- Continents -->
+  <path d="M350,220 Q380,210 410,230 Q440,250 470,240 Q450,270 470,290 Q450,310 430,300 Q410,320 380,310 Q350,330 330,310 Q310,290 330,270 Q310,250 330,230 Z" fill="#2d4d1e" />
+  <path d="M320,350 Q350,330 380,350 Q410,370 440,350 Q470,370 450,390 Q420,410 390,390 Q360,410 330,390 Q300,370 320,350 Z" fill="#2d4d1e" />
+  
+  <!-- Magnetosphere -->
+  <path d="M400,180 Q250,200 200,300 Q250,400 400,420 Q550,400 600,300 Q550,200 400,180" fill="none" stroke="#4a6cff" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Magnetic Field Lines -->
+  <path d="M400,180 Q300,200 250,300 Q300,400 400,420" fill="none" stroke="#4a6cff" stroke-width="2" opacity="0.7" />
+  <path d="M400,180 Q500,200 550,300 Q500,400 400,420" fill="none" stroke="#4a6cff" stroke-width="2" opacity="0.7" />
+  
+  <!-- Aurora Oval - Northern Hemisphere -->
+  <ellipse cx="400" cy="220" rx="70" ry="20" fill="none" stroke="#26ff8c" stroke-width="15" stroke-opacity="0.7" />
+  <ellipse cx="400" cy="220" rx="70" ry="20" fill="none" stroke="#b14dff" stroke-width="5" stroke-opacity="0.5" />
+  
+  <!-- Aurora Oval - Southern Hemisphere -->
+  <ellipse cx="400" cy="380" rx="70" ry="20" fill="none" stroke="#26ff8c" stroke-width="15" stroke-opacity="0.7" />
+  <ellipse cx="400" cy="380" rx="70" ry="20" fill="none" stroke="#b14dff" stroke-width="5" stroke-opacity="0.5" />
+  
+  <!-- Aurora Curtains - Northern -->
+  <path d="M350,200 Q355,180 360,210 Q365,190 370,205 Q375,185 380,200 Q385,180 390,210 Q395,190 400,205 Q405,185 410,200 Q415,180 420,210 Q425,190 430,205 Q435,185 440,200 Q445,180 450,210" fill="none" stroke="#26ff8c" stroke-width="3" stroke-opacity="0.9" />
+  <path d="M355,200 Q360,180 365,210 Q370,190 375,205 Q380,185 385,200 Q390,180 395,210 Q400,190 405,205 Q410,185 415,200 Q420,180 425,210 Q430,190 435,205 Q440,185 445,200" fill="none" stroke="#b14dff" stroke-width="2" stroke-opacity="0.7" />
+  
+  <!-- Aurora Curtains - Southern -->
+  <path d="M350,400 Q355,420 360,390 Q365,410 370,395 Q375,415 380,400 Q385,420 390,390 Q395,410 400,395 Q405,415 410,400 Q415,420 420,390 Q425,410 430,395 Q435,415 440,400 Q445,420 450,390" fill="none" stroke="#26ff8c" stroke-width="3" stroke-opacity="0.9" />
+  <path d="M355,400 Q360,420 365,390 Q370,410 375,395 Q380,415 385,400 Q390,420 395,390 Q400,410 405,395 Q410,415 415,400 Q420,420 425,390 Q430,410 435,395 Q440,415 445,400" fill="none" stroke="#b14dff" stroke-width="2" stroke-opacity="0.7" />
+  
+  <!-- Charged Particles Interacting with Atmosphere -->
+  <g id="charged-particles-north">
+    <circle cx="370" cy="210" r="1" fill="#ffdd00" />
+    <circle cx="380" cy="205" r="1" fill="#ffdd00" />
+    <circle cx="390" cy="215" r="1" fill="#ffdd00" />
+    <circle cx="400" cy="208" r="1" fill="#ffdd00" />
+    <circle cx="410" cy="212" r="1" fill="#ffdd00" />
+    <circle cx="420" cy="206" r="1" fill="#ffdd00" />
+    <circle cx="430" cy="214" r="1" fill="#ffdd00" />
+  </g>
+  
+  <g id="charged-particles-south">
+    <circle cx="370" cy="390" r="1" fill="#ffdd00" />
+    <circle cx="380" cy="395" r="1" fill="#ffdd00" />
+    <circle cx="390" cy="385" r="1" fill="#ffdd00" />
+    <circle cx="400" cy="392" r="1" fill="#ffdd00" />
+    <circle cx="410" cy="388" r="1" fill="#ffdd00" />
+    <circle cx="420" cy="394" r="1" fill="#ffdd00" />
+    <circle cx="430" cy="386" r="1" fill="#ffdd00" />
+  </g>
+  
+  <!-- Animate Charged Particles -->
+  <animateTransform 
+    xlink:href="#charged-particles-north"
+    attributeName="transform"
+    type="translate"
+    from="0 -20"
+    to="0 20"
+    dur="2s"
+    repeatCount="indefinite" />
+  
+  <animateTransform 
+    xlink:href="#charged-particles-south"
+    attributeName="transform"
+    type="translate"
+    from="0 20"
+    to="0 -20"
+    dur="2s"
+    repeatCount="indefinite" />
+  
+  <!-- Labels -->
+  <text x="50" y="80" fill="#ffdd00" font-family="Arial" font-size="14" font-weight="bold">Solar Wind</text>
+  <text x="400" y="150" fill="#4a6cff" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Magnetosphere</text>
+  <text x="400" y="220" fill="#26ff8c" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Aurora Borealis</text>
+  <text x="400" y="380" fill="#26ff8c" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Aurora Australis</text>
+  
+  <!-- Atmospheric Layers -->
+  <path d="M320,220 Q400,210 480,220" fill="none" stroke="#ff5e5e" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="490" y="220" fill="#ff5e5e" font-family="Arial" font-size="12">100-150 km (Oxygen - Green)</text>
+  
+  <path d="M320,200 Q400,190 480,200" fill="none" stroke="#ff5e5e" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="490" y="200" fill="#ff5e5e" font-family="Arial" font-size="12">150+ km (Oxygen - Red)</text>
+  
+  <path d="M320,240 Q400,230 480,240" fill="none" stroke="#ff5e5e" stroke-width="1" stroke-dasharray="3,2" />
+  <text x="490" y="240" fill="#ff5e5e" font-family="Arial" font-size="12">80-100 km (Nitrogen - Blue/Purple)</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" fill="#e0e0ff" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Aurora Formation Process</text>
+  
+  <!-- Description -->
+  <text x="400" y="530" fill="#e0e0ff" font-family="Arial" font-size="14" text-anchor="middle">Solar wind particles follow Earth's magnetic field lines to the poles</text>
+  <text x="400" y="550" fill="#e0e0ff" font-family="Arial" font-size="14" text-anchor="middle">where they collide with atmospheric gases, creating the aurora light displays</text>
+</svg>
